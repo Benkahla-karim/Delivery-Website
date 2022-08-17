@@ -1,0 +1,133 @@
+// import global rules 
+@use "./sass/global/globel-rules" ;
+// varibel
+$main_color: #1a1a1a;
+$alt_color: #fdcb35;
+$section_color: #fee59a;
+
+@mixin tablet {
+    @media (max-width:991px) {
+        @content
+    }
+};
+@mixin mobile {
+    @media (max-width:767px) {
+        @content
+    }
+}
+// start nav
+.navbar {
+ color: $main_color;
+ .navbar .nav-link {
+    color: $main_color;
+}
+}
+.main-btn {
+    background-color: $alt_color;
+    border: none;
+}
+.main-btn:hover {
+    background-color: $alt_color;
+    color: $main_color;
+    border: none;
+}
+// End nav
+.landing {
+    height: calc(100vh - 72px);
+    & h1 {
+        color: $alt_color;
+        font-size: 50px;
+        @include tablet {
+            font-size: 40px;
+        }
+    }
+    & p {
+        font-size: 20px;
+        @include tablet {
+            font-size: 15px
+        };
+    }
+    & img {
+        fill: $alt_color;
+    }
+    & .info {
+        @include mobile {
+           order: 2;
+        }
+    }
+    & .image {
+        @include mobile {
+            order: 1;
+        }
+    }
+    & .images svg {
+        fill: $alt_color;
+    }
+}
+.about {
+    & .info {
+        @include mobile {
+           order: 2;
+        }
+    }
+    & .image {
+        @include mobile {
+            order: 1;
+        }
+    }
+    & svg {
+        fill: $alt_color;
+    }
+}
+.service {
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 20px;
+        h4 {
+            color: $alt_color;
+        }
+        p {
+            color: $main_color;
+            font-weight: 500;
+        }
+        .image img {
+            width: 100px;
+            height: 100px;
+        }
+        & a {
+            text-decoration: none;
+            color: $main_color;
+            font-weight: bold;
+        }
+        
+    }
+    & svg {
+        fill: $alt_color;
+    }
+}
+.download {
+    & svg {
+        fill: $alt_color;
+    }
+}
+.contact {
+    .information span {
+        color: $main_color;
+    }
+}
+.footer {
+    background-color: $section_color;
+    & .cole-alt {
+        color: $alt_color;
+    }
+    & li {
+        cursor: pointer;
+    }
+    & a {
+        color: $main_color;
+    }
+}

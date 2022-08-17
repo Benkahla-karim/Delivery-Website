@@ -1,0 +1,192 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  color: #1a1a1a;
+}
+
+.navbar .navbar .nav-link {
+  color: #1a1a1a;
+}
+
+.main-btn {
+  background-color: #fdcb35;
+  border: none;
+}
+
+.main-btn:hover {
+  background-color: #efbf2f;
+  color: #1a1a1a;
+  border: none;
+}
+
+.navbar .close {
+  display: none;
+}
+
+@media (max-width:992px) {
+  .navbar-collapse {
+    position: fixed !important;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fdcb35;
+    right: 0;
+    top: 0;
+    transition: 0.3s linear;
+    transform: translateX(100%);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar .close {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #1a1a1a;
+  }
+}
+
+.navbar-collapse.show {
+  transform: translateX(0px);
+}
+
+.landing {
+  height: calc(100vh - 72px);
+}
+
+.landing h1 {
+  color: #fdcb35;
+  font-size: 50px;
+}
+
+@media (max-width: 991px) {
+  .landing h1 {
+    font-size: 40px;
+  }
+}
+
+.landing p {
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .landing p {
+    font-size: 15px;
+  }
+}
+
+.landing img {
+  fill: #fdcb35;
+}
+
+@media (max-width: 767px) {
+  .landing .info {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing .image {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+.landing .images svg {
+  fill: #fdcb35;
+}
+
+@media (max-width: 767px) {
+  .about .info {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .image {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+.about svg {
+  fill: #fdcb35;
+}
+
+.service .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.service .box h4 {
+  color: #fdcb35;
+}
+
+.service .box p {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.service .box .image img {
+  width: 100px;
+  height: 100px;
+}
+
+.service .box a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.service svg {
+  fill: #fdcb35;
+}
+
+.download svg {
+  fill: #fdcb35;
+}
+
+.contact .information span {
+  color: #1a1a1a;
+}
+
+.footer {
+  background-color: #fee59a;
+}
+
+.footer .cole-alt {
+  color: #fdcb35;
+}
+
+.footer li {
+  cursor: pointer;
+}
+
+.footer a {
+  color: #1a1a1a;
+}
